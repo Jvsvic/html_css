@@ -1,0 +1,16 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(60, 185, 60);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: green;
+}
+h2{
+    color: rgb(14, 94, 14);
+}
+#principal{
+    color: black;
+    text-align: center;
+}
+h2:hover{color: blue;}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+        width: 500px;
+      }
+      td,
+      th {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid black;
+      }
+      caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      tbody > tr:nth-child(even) {
+        background-color: rgb(211, 211, 211);
+      }
+      thead,
+      tfoot {
+        background-color: rgb(85, 85, 85);
+        color: white;
+      }
+      .num {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Uso de tabela grandes</h1>
+
+    <table>
+      <caption>
+        População das unidades
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Estado</th>
+          <th scope="col" style="width: 40px">População</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">44 411 238</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">20 538 718</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td class="num">16 054 524</td>
+        </tr>
+        <tr>
+          <td>Bahia</td>
+          <td class="num">14 141 626</td>
+        </tr>
+        <tr>
+          <td>Paraná</td>
+          <td class="num">11 444 380</td>
+        </tr>
+        <tr>
+          <td>Rio Grande do Sul</td>
+          <td class="num">10 882 965</td>
+        </tr>
+        <tr>
+          <td>Pernambuco</td>
+          <td class="num">9 058 931</td>
+        </tr>
+        <tr>
+          <td>Ceará</td>
+          <td class="num">8 794 957</td>
+        </tr>
+        <tr>
+          <td>Pará</td>
+          <td class="num">8 121 025</td>
+        </tr>
+        <tr>
+          <td>Santa Catarina</td>
+          <td class="num">7 610 361</td>
+        </tr>
+        <tr>
+          <td>Goiás</td>
+          <td class="num">7 056 495</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Total de habitantes</th>
+          <td class="num"><strong>000</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
